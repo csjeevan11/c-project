@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "functions.h"
 
-int main() {
+void factorial() {
     int n, fact = 1;
 
     printf("Enter a number: ");
@@ -15,6 +16,6 @@ int main() {
         printf("Factorial of %d is %d\n", n, fact);
     }
 
-    return 0;
+    //return 0;
 }
 

@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "functions.h"
 
-int main() {
+void biggest3() {
     int a, b, c;
 
     printf("Enter three numbers: ");
@@ -14,6 +15,6 @@ int main() {
         printf("Biggest number is: %d\n", c);
     }
 
-    return 0;
+//    return 0;
 }
 
