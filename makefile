@@ -1,10 +1,24 @@
-ABC.exc:main.o big3.o fact.o
+ABC.exe: main.o big3.o fact.o
 	gcc -o ABC.exe main.o big3.o fact.o
-main.o:main.c
+
+test.exe: test.o big3.o fact.o
+	gcc -o test.exe test.o big3.o fact.o
+
+main.o: main.c
 	gcc -c main.c
-big3.o:big3.c
+
+big3.o: big3.c
 	gcc -c big3.c
-fact.o:fact.c
+
+fact.o: fact.c
 	gcc -c fact.c
+
+test.o: test.c
+	gcc -c test.c
+
+test: test.exe
+	./test.exe
+
 clean:
-	rm -f *.o ABC.exe
+	rm -f *.o *.exe
+

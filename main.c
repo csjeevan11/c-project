@@ -1,9 +1,9 @@
-
+#include <stdio.h>
 #include "functions.h"
 
 int main() {
-	biggest3();
-	factorial();
-	return 0;
+    printf("Biggest: %d\n", biggest_of_three(10, 20, 5));
+    printf("Factorial: %d\n", factorial_calc(5));
+    return 0;
 }
 

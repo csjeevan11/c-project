@@ -1,21 +1,13 @@
-#include <stdio.h>
 #include "functions.h"
 
-void factorial() {
-    int n, fact = 1;
+int factorial_calc(int n) {
+    if (n < 0)
+        return -1;
 
-    printf("Enter a number: ");
-    scanf("%d", &n);
-
-    if (n < 0) {
-        printf("Factorial is not defined for negative numbers\n");
-    } else {
-        for (int i = 1; i <= n; i++) {
-            fact = fact * i;
-        }
-        printf("Factorial of %d is %d\n", n, fact);
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
     }
-
-    //return 0;
+    return fact;
 }
 
